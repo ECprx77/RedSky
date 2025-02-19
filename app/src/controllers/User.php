@@ -18,7 +18,7 @@ class User extends Controller {
   }
 
   #[Route("POST", "/users")]
-  public function toto() {
+  public function createUser() {
     $this->user->add($this->body);
 
     return $this->user->getLast();

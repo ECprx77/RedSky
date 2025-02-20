@@ -9,12 +9,12 @@ require 'vendor/autoload.php';
 $router = new App\Router();
 
 use App\Router;
-use App\Controllers\{User, Dogs, Auth};
+use App\Controllers\{User,Likes,Posts, Auth};
 
 $controllers = [
     User::class,
-    Post::class,
-    Like::class,
+    Posts::class,
+    Likes::class,
     Auth::class,
 ];
 

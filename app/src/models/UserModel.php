@@ -7,12 +7,12 @@ use stdClass;
 
 class UserModel extends SqlConnect {
     private $table = "users";
-    public $authorized_fields_to_update = ['first_name', 'last_name'];
+    public $authorized_fields_to_update = ['username'];
 
     public function add(array $data) {
       $query = "
-        INSERT INTO $this->table (first_name, last_name, promo, school)
-        VALUES (:first_name, :last_name, :promo, :school)
+        INSERT INTO $this->table (username)
+        VALUES (:username)
       ";
 
       $req = $this->db->prepare($query);

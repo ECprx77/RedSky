@@ -8,6 +8,6 @@ use App\Utils\Route;
 use App\Utils\HttpException;
 use App\Middlewares\AuthMiddleware;
 
-class Like extends Controller {
+class Likes extends Controller {
     
 }

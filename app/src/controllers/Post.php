@@ -9,5 +9,9 @@ use App\Utils\HttpException;
 use App\Middlewares\AuthMiddleware;
 
 Class Post extends Controller {
-    
+    protected object $post;
+    public function __construct(object $post) {
+        $this->post = $post;
+        parent::__construct($post);
+    }
 }

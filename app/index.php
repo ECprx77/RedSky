@@ -17,3 +17,4 @@ $controllers = [
 $router = new Router();
 $router->registerControllers($controllers);
 $router->run();
+// I can't lie I just don't understand anything about php

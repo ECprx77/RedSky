@@ -1,5 +1,8 @@
 <?php
 
+use App\Controllers\Like;
+use App\Controllers\Post;
+
 require 'vendor/autoload.php';
 
 // Initialize router and start application
@@ -10,7 +13,8 @@ use App\Controllers\{User, Dogs, Auth};
 
 $controllers = [
     User::class,
-    Dogs::class,
+    Post::class,
+    Like::class,
     Auth::class,
 ];
 

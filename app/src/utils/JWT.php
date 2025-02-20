@@ -2,8 +2,8 @@
 
 namespace App\Utils;
 
-class JWT {
-  private static $secret = "mon-super-secret";
+class JWT {  
+  private static $secret = "mao-zedong";
 
   public static function generate($payload) {
     // Base 64

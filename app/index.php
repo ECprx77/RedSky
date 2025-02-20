@@ -2,6 +2,9 @@
 
 require 'vendor/autoload.php';
 
+// Initialize router and start application
+$router = new App\Router();
+
 use App\Router;
 use App\Controllers\{User, Dogs, Auth};
 
